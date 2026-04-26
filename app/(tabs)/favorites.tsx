@@ -1,40 +1,26 @@
 import { IconSymbol } from '@/components/ui/icon-symbol';
-import { bandas } from '@/constants/bandas';
+import { useFavorites } from '@/contexts/favorites-context';
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
-import { FlatList, Image, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function HomeScreen() {
+export default function FavoritesScreen() {
   const router = useRouter();
-  const [search, setSearch] = useState('');
+  const { favoriteBands } = useFavorites();
 
-  const filteredBands = useMemo(() => {
-    const normalizedQuery = search.trim().toLowerCase();
-
-    if (!normalizedQuery) {
-      return bandas;
-    }
-
-    return bandas.filter((banda) => banda.nome.toLowerCase().includes(normalizedQuery));
-  }, [search]);
+  if (favoriteBands.length === 0) {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.title}>FAVORITOS</Text>
+        <Text style={styles.text}>Nenhuma banda favorita ainda.</Text>
+      </View>
+    );
+  }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>BANDPEDIA</Text>
-
-      <View style={styles.searchContainer}>
-        <IconSymbol name="magnifyingglass" size={20} color="#8E8E93" />
-        <TextInput
-          value={search}
-          onChangeText={setSearch}
-          placeholder="Buscar banda..."
-          placeholderTextColor="#7B7B80"
-          style={styles.searchInput}
-        />
-      </View>
-
+      <Text style={styles.title}>FAVORITOS</Text>
       <FlatList
-        data={filteredBands}
+        data={favoriteBands}
         keyExtractor={(item) => item.id.toString()}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
@@ -72,27 +58,15 @@ const styles = StyleSheet.create({
     paddingTop: 62,
   },
   title: {
-    color: '#F2F2F5',
+    color: '#FFFFFF',
     fontSize: 42,
     fontWeight: '800',
-    marginBottom: 20,
+    marginBottom: 18,
   },
-  searchContainer: {
-    height: 54,
-    borderRadius: 14,
-    backgroundColor: '#16161B',
-    borderWidth: 1,
-    borderColor: '#1E1E24',
-    alignItems: 'center',
-    flexDirection: 'row',
-    paddingHorizontal: 16,
-    gap: 12,
-    marginBottom: 14,
-  },
-  searchInput: {
-    flex: 1,
-    color: '#FFFFFF',
-    fontSize: 18,
+  text: {
+    color: '#BDBDC4',
+    fontSize: 19,
+    textAlign: 'center',
   },
   listContent: {
     paddingBottom: 26,

@@ -1,0 +1,300 @@
+[
+    {
+      "id": 1,
+      "nome": "Foo Fighters",
+      "anoFormacao": 1994,
+      "pais": "Estados Unidos",
+      "genero": "Rock Alternativo",
+      "descricao": "Banda formada por Dave Grohl após o fim do Nirvana, tornando-se uma das maiores bandas de rock das últimas décadas.",
+      "integrantes": [
+        "Dave Grohl",
+        "Nate Mendel",
+        "Pat Smear",
+        "Chris Shiflett"
+      ],
+      "albunsFamosos": [
+        "The Colour and the Shape",
+        "Wasting Light",
+        "Echoes, Silence, Patience & Grace"
+      ],
+      "musicasFamosas": [
+        "Everlong",
+        "The Pretender",
+        "Best of You"
+      ],
+      "curiosidades": [
+        "Dave Grohl gravou sozinho todos os instrumentos no primeiro álbum.",
+        "A banda já ganhou diversos prêmios Grammy.",
+        "Everlong é considerada uma das melhores músicas de rock dos anos 90."
+      ],
+      "imagem": "require('@/assets/images/foo.webp')"
+    },
+    {
+      "id": 2,
+      "nome": "Engenheiros do Hawaii",
+      "anoFormacao": 1985,
+      "pais": "Brasil",
+      "genero": "Rock",
+      "descricao": "Banda brasileira liderada por Humberto Gessinger, conhecida por letras reflexivas e críticas sociais.",
+      "integrantes": [
+        "Humberto Gessinger",
+        "Carlos Maltz",
+        "Augusto Licks"
+      ],
+      "albunsFamosos": [
+        "Acústico MTV",
+        "O Papa é Pop",
+        "A Revolta dos Dândis"
+      ],
+      "musicasFamosas": [
+        "Infinita Highway",
+        "O Papa é Pop",
+        "Era um Garoto que Como Eu Amava os Beatles e os Rolling Stones"
+      ],
+      "curiosidades": [
+        "O nome da banda surgiu como uma brincadeira com estudantes de engenharia.",
+        "Humberto Gessinger é conhecido por tocar vários instrumentos.",
+        "As letras frequentemente abordam filosofia e política."
+      ],
+      "imagem": "require('@/assets/images/engenheiros.webp')"
+    },
+    {
+      "id": 3,
+      "nome": "Jota Quest",
+      "anoFormacao": 1993,
+      "pais": "Brasil",
+      "genero": "Pop Rock",
+      "descricao": "Banda brasileira conhecida por misturar pop, rock e funk, com músicas de grande sucesso nacional.",
+      "integrantes": [
+        "Rogério Flausino",
+        "Marco Túlio Lara",
+        "Márcio Buzelin",
+        "PJ",
+        "Paulinho Fonseca"
+      ],
+      "albunsFamosos": [
+        "De Volta ao Planeta",
+        "Oxigênio",
+        "Funky Funky Boom Boom"
+      ],
+      "musicasFamosas": [
+        "Fácil",
+        "Dias Melhores",
+        "Amor Maior"
+      ],
+      "curiosidades": [
+        "A banda inicialmente se chamava J.Quest, inspirada em um desenho animado.",
+        "É uma das bandas mais populares do pop rock brasileiro.",
+        "Já fez diversas turnês internacionais."
+      ],
+      "imagem": "require('@/assets/images/jota.jpg')"
+    },
+    {
+      "id": 4,
+      "nome": "Eagles",
+      "anoFormacao": 1971,
+      "pais": "Estados Unidos",
+      "genero": "Rock",
+      "descricao": "Banda americana conhecida por seu som suave e grandes sucessos do rock clássico.",
+      "integrantes": [
+        "Don Henley",
+        "Glenn Frey",
+        "Joe Walsh",
+        "Timothy B. Schmit"
+      ],
+      "albunsFamosos": [
+        "Hotel California",
+        "Their Greatest Hits",
+        "Desperado"
+      ],
+      "musicasFamosas": [
+        "Hotel California",
+        "Take It Easy",
+        "Desperado"
+      ],
+      "curiosidades": [
+        "O álbum 'Their Greatest Hits' é um dos mais vendidos da história.",
+        "A música Hotel California é considerada um clássico do rock.",
+        "A banda passou por separações e retornos ao longo dos anos."
+      ],
+      "imagem": "require('@/assets/images/eagles.webp')"
+    },
+    {
+      "id": 5,
+      "nome": "Charlie Brown Jr.",
+      "anoFormacao": 1992,
+      "pais": "Brasil",
+      "genero": "Rock Alternativo",
+      "descricao": "Banda brasileira que mistura rock, rap e skate punk, marcada pela personalidade de Chorão.",
+      "integrantes": [
+        "Chorão",
+        "Champignon",
+        "Marcão",
+        "Thiago Castanho"
+      ],
+      "albunsFamosos": [
+        "Preço Curto... Prazo Longo",
+        "Nadando com os Tubarões",
+        "Camisa 10 Joga Bola Até na Chuva"
+      ],
+      "musicasFamosas": [
+        "Zóio de Lula",
+        "Dias de Luta, Dias de Glória",
+        "Só os Loucos Sabem"
+      ],
+      "curiosidades": [
+        "A banda tem forte ligação com a cultura do skate.",
+        "Chorão era conhecido por suas letras intensas e pessoais.",
+        "Mesmo após o fim, continua influenciando novas gerações."
+      ],
+      "imagem": "require('@/assets/images/charlie.jpg')"
+    },
+    {
+      "id": 6,
+      "nome": "Nirvana",
+      "anoFormacao": 1987,
+      "pais": "Estados Unidos",
+      "genero": "Grunge",
+      "descricao": "Banda que marcou a geração dos anos 90 e popularizou o grunge mundialmente, liderada por Kurt Cobain.",
+      "integrantes": [
+        "Kurt Cobain",
+        "Krist Novoselic",
+        "Dave Grohl"
+      ],
+      "albunsFamosos": [
+        "Nevermind",
+        "In Utero"
+      ],
+      "musicasFamosas": [
+        "Smells Like Teen Spirit",
+        "Come As You Are",
+        "Lithium"
+      ],
+      "curiosidades": [
+        "Nevermind revolucionou o cenário do rock nos anos 90.",
+        "Kurt Cobain se tornou um ícone cultural da época.",
+        "A banda teve carreira curta, mas extremamente influente."
+      ],
+      "imagem": "require('@/assets/images/nirvana.webp')"
+    },
+    {
+      "id": 7,
+      "nome": "Legião Urbana",
+      "anoFormacao": 1982,
+      "pais": "Brasil",
+      "genero": "Rock",
+      "descricao": "Uma das bandas mais influentes do rock brasileiro, conhecida pelas letras profundas e críticas sociais.",
+      "integrantes": [
+        "Renato Russo",
+        "Dado Villa-Lobos",
+        "Marcelo Bonfá"
+      ],
+      "albunsFamosos": [
+        "Dois",
+        "Que País é Este",
+        "Legião Urbana"
+      ],
+      "musicasFamosas": [
+        "Tempo Perdido",
+        "Pais e Filhos",
+        "Faroeste Caboclo"
+      ],
+      "curiosidades": [
+        "Renato Russo era conhecido por suas letras filosóficas.",
+        "Faroeste Caboclo possui mais de 9 minutos e conta uma história completa.",
+        "A banda marcou gerações no Brasil."
+      ],
+      "imagem": "require('@/assets/images/legiao.jpg')"
+    },
+    {
+      "id": 8,
+      "nome": "Red Hot Chili Peppers",
+      "anoFormacao": 1983,
+      "pais": "Estados Unidos",
+      "genero": "Funk Rock",
+      "descricao": "Banda conhecida por misturar rock, funk e punk, criando um estilo único e energético.",
+      "integrantes": [
+        "Anthony Kiedis",
+        "Flea",
+        "Chad Smith",
+        "John Frusciante"
+      ],
+      "albunsFamosos": [
+        "Californication",
+        "By the Way",
+        "Blood Sugar Sex Magik"
+      ],
+      "musicasFamosas": [
+        "Californication",
+        "Under the Bridge",
+        "Can't Stop"
+      ],
+      "curiosidades": [
+        "Flea é considerado um dos maiores baixistas do rock.",
+        "A banda é famosa por suas performances energéticas.",
+        "Misturam vários estilos musicais em suas músicas."
+      ],
+      "imagem": "require('@/assets/images/redhot.webp')"
+    },
+    {
+      "id": 9,
+      "nome": "Coldplay",
+      "anoFormacao": 1996,
+      "pais": "Reino Unido",
+      "genero": "Pop Rock",
+      "descricao": "Banda britânica conhecida por suas músicas emotivas e grande sucesso mundial.",
+      "integrantes": [
+        "Chris Martin",
+        "Jonny Buckland",
+        "Guy Berryman",
+        "Will Champion"
+      ],
+      "albunsFamosos": [
+        "A Rush of Blood to the Head",
+        "Parachutes",
+        "Viva la Vida"
+      ],
+      "musicasFamosas": [
+        "Yellow",
+        "Fix You",
+        "Viva la Vida"
+      ],
+      "curiosidades": [
+        "Coldplay é uma das bandas mais populares do século XXI.",
+        "Suas músicas são conhecidas por forte carga emocional.",
+        "A banda realiza grandes turnês mundiais."
+      ],
+      "imagem": "require('@/assets/images/cold.webp')"
+    },
+    {
+      "id": 10,
+      "nome": "Linkin Park",
+      "anoFormacao": 1996,
+      "pais": "Estados Unidos",
+      "genero": "Nu Metal",
+      "descricao": "Banda que marcou os anos 2000 com sua mistura de rock, rap e eletrônico.",
+      "integrantes": [
+        "Chester Bennington",
+        "Mike Shinoda",
+        "Brad Delson",
+        "Dave Farrell",
+        "Joe Hahn",
+        "Rob Bourdon"
+      ],
+      "albunsFamosos": [
+        "Hybrid Theory",
+        "Meteora"
+      ],
+      "musicasFamosas": [
+        "In the End",
+        "Numb",
+        "Breaking the Habit"
+      ],
+      "curiosidades": [
+        "Hybrid Theory é um dos álbuns de estreia mais vendidos da história.",
+        "A banda misturou vários gêneros musicais de forma inovadora.",
+        "Chester Bennington marcou uma geração com sua voz."
+      ],
+      "imagem": "require('@/assets/images/park.jpg')"
+    }
+  ]
