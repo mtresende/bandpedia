@@ -115,10 +115,3 @@ npx expo start -c
 ## Objetivo Acadêmico
 
 Este projeto foi desenvolvido como parte de uma atividade acadêmica com o objetivo de aplicar conceitos de desenvolvimento mobile, organização de dados, navegação entre telas e construção de interfaces com React Native.
-
----
-
-## Autor
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
