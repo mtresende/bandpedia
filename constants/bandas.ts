@@ -30,6 +30,7 @@ const imageMap: Record<string, ImageSourcePropType> = {
   'redhot.jpg': require('@/assets/images/redhot.jpg'),
   'cold.webp': require('@/assets/images/cold.webp'),
   'park.jpg': require('@/assets/images/park.jpg'),
+  'u2.jpg': require('@/assets/images/u2.jpg'),
 };
 
 const imageAliases: Record<string, string> = {

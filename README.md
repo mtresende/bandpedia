@@ -1,50 +1,123 @@
-# Welcome to your Expo app 👋
+# Bandpedia
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Descrição
 
-## Get started
+Bandpedia é um aplicativo mobile educacional desenvolvido com React Native e Expo, cujo objetivo é apresentar informações sobre bandas musicais de forma organizada, visual e acessível. A aplicação permite que o usuário explore uma lista de bandas e visualize detalhes como descrição, integrantes, álbuns, músicas famosas e curiosidades, promovendo uma experiência informativa e intuitiva.
 
-1. Install dependencies
+O conteúdo do aplicativo é gerenciado por meio de um arquivo JSON local, o que facilita a manutenção, escalabilidade e separação entre dados e interface.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## Funcionalidades
 
-   ```bash
-   npx expo start
-   ```
+- Tela de splash para apresentação inicial do aplicativo  
+- Listagem de bandas em formato de cartões com imagem, nome, gênero e ano de formação  
+- Navegação para tela de detalhes com informações completas de cada banda  
+- Exibição de descrição, integrantes, álbuns, músicas famosas e curiosidades  
+- Tela "Sobre" com informações do projeto e do desenvolvedor  
+- Consumo de dados a partir de arquivo JSON local  
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Tecnologias Utilizadas
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native  
+- Expo  
+- JavaScript  
+- JSON  
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Estrutura do Projeto
+
+```
+app/
+assets/
+  images/
+components/
+constants/
+  bandas.json
+hooks/
+````
+
+- `app/`: Contém as telas da aplicação utilizando o padrão do Expo Router  
+- `components/`: Componentes reutilizáveis  
+- `constants/bandas.json`: Fonte de dados estáticos do aplicativo  
+- `assets/images/`: Imagens utilizadas na aplicação  
+
+---
+
+## Estrutura dos Dados
+
+As informações das bandas são armazenadas no arquivo `bandas.json`, localizado na pasta `constants`. Cada banda segue uma estrutura padronizada contendo:
+
+- id  
+- nome  
+- ano de formação  
+- país  
+- gênero  
+- descrição  
+- integrantes  
+- álbuns famosos  
+- músicas famosas  
+- curiosidades  
+- imagem  
+
+Essa abordagem permite fácil expansão do conteúdo sem necessidade de alterações na lógica da aplicação.
+
+---
+## Como rodar o projeto
+
+### 1) Pre-requisitos
+
+- Node.js LTS (recomendado: 20+)
+- npm (ja vem com Node)
+- Expo Go no celular (Android/iOS) **ou** emulador configurado
+
+### 2) Instalar dependencias
+
+No diretorio do projeto, rode:
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 3) Iniciar o projeto
 
-## Learn more
+- `npx expo start`: inicia o Expo
+- `npx expo start --tunnel`: caso tenha problemas de rede
 
-To learn more about developing your project with Expo, look at the following resources:
+Esse comando abre o Metro Bundler (servidor do Expo). A partir dele voce pode abrir o app em:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Android (emulador/dispositivo)
+- iOS (simulador no macOS)
+- Web
+  
+## Estrutura base
 
-## Join the community
+- `app/`: telas e rotas (Expo Router)
+- `components/`: componentes reutilizaveis
+- `contexts/`: contextos React
+- `assets/`: imagens e icones
 
-Join our community of developers creating universal apps.
+## Observacoes
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Se houver erro de cache, tente:
+
+```bash
+npx expo start -c
+```
+
+- Se estiver no celular, use o app Expo Go e escaneie o QR Code exibido no terminal.
+
+---
+
+## Objetivo Acadêmico
+
+Este projeto foi desenvolvido como parte de uma atividade acadêmica com o objetivo de aplicar conceitos de desenvolvimento mobile, organização de dados, navegação entre telas e construção de interfaces com React Native.
+
+---
+
+## Autor
+
+Matheus Resende
