@@ -47,46 +47,6 @@ hooks/
 
 ---
 
-## Instalação e Execução
-
-### Pré-requisitos
-
-- Node.js instalado  
-- Expo CLI (opcional, pode ser usado via npx)  
-- Aplicativo Expo Go instalado no dispositivo móvel  
-
-### Passos
-
-1. Clone o repositório:
-
-
-`git clone https://github.com/seu-usuario/bandpedia.git`
-
-
-2. Acesse a pasta do projeto:
-
-
-`cd bandpedia`
-
-
-3. Instale as dependências:
-
-
-`npm install`
-
-
-4. Inicie o projeto:
-
-
-`npx expo start`
-
-
-5. Execute no dispositivo:
-- Escaneie o QR Code com o Expo Go  
-- Ou utilize um emulador Android/iOS  
-
----
-
 ## Estrutura dos Dados
 
 As informações das bandas são armazenadas no arquivo `bandas.json`, localizado na pasta `constants`. Cada banda segue uma estrutura padronizada contendo:
@@ -104,6 +64,51 @@ As informações das bandas são armazenadas no arquivo `bandas.json`, localizad
 - imagem  
 
 Essa abordagem permite fácil expansão do conteúdo sem necessidade de alterações na lógica da aplicação.
+
+---
+## Como rodar o projeto
+
+### 1) Pre-requisitos
+
+- Node.js LTS (recomendado: 20+)
+- npm (ja vem com Node)
+- Expo Go no celular (Android/iOS) **ou** emulador configurado
+
+### 2) Instalar dependencias
+
+No diretorio do projeto, rode:
+
+```bash
+npm install
+```
+
+### 3) Iniciar o projeto
+
+- `npx expo start`: inicia o Expo
+- `npx expo start --tunnel`: caso tenha problemas de rede
+
+Esse comando abre o Metro Bundler (servidor do Expo). A partir dele voce pode abrir o app em:
+
+- Android (emulador/dispositivo)
+- iOS (simulador no macOS)
+- Web
+  
+## Estrutura base
+
+- `app/`: telas e rotas (Expo Router)
+- `components/`: componentes reutilizaveis
+- `contexts/`: contextos React
+- `assets/`: imagens e icones
+
+## Observacoes
+
+- Se houver erro de cache, tente:
+
+```bash
+npx expo start -c
+```
+
+- Se estiver no celular, use o app Expo Go e escaneie o QR Code exibido no terminal.
 
 ---
 
